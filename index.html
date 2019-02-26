@@ -7,6 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vue Firebase</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+    <style>
+        .one{
+            color: red;
+        }
+
+        .two{
+            background-color: black ;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -14,6 +24,9 @@
     <div id="app">
         <h2> {{ title }} </h2>
         <p>{{ greet('manhã') }}</p>
+        <a :href="url">Vue</a>
+        <div :class="classes">Classes from instance</div>
+        <input type="text" :value="name">
     </div> 
 
     <script src="app.js"></script>

@@ -2,7 +2,9 @@ new Vue({
     el: '#app',
     data: {
         title: 'Vue training',
-        name: 'Rafael'
+        name: 'Rafael',
+        url: "https://vuejs.org/v2/guide/installation.html",
+        classes: ['one', 'two']
     }, 
     methods:{
         greet(time){
