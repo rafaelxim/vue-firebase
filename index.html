@@ -23,10 +23,12 @@
     <h1>Vue Basics</h1>
     <div id="app">
         <h2> {{ title }} </h2>
-        <p>{{ greet('manhã') }}</p>
-        <a :href="url">Vue</a>
-        <div :class="classes">Classes from instance</div>
-        <input type="text" :value="name">
+        <p>Eu ganho {{ wage }} dólares por hora </p>
+        <button @click="changeWage(10)">Aumentar salário</button>
+        <button @click="changeWage(-12)">Diminuir salário</button>
+        <button @dblclick="changeWage(200)">Aumentar muito o salário</button>
+        <button @dblclick="changeWage(-200)">Diminuir muito o salário</button>
+
     </div> 
 
     <script src="app.js"></script>
