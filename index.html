@@ -8,12 +8,11 @@
     <title>Vue Firebase</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
     <style>
-        .one{
-            color: red;
-        }
-
-        .two{
-            background-color: black ;
+        .canvas{
+            width: 300px;
+            height: 300px;
+            margin-top: 20px;
+            background: #ddd;
         }
     </style>
 
@@ -23,13 +22,11 @@
     <h1>Vue Basics</h1>
     <div id="app">
         <h2> {{ title }} </h2>
-        <p>Eu ganho {{ wage }} dólares por hora </p>
-        <button @click="changeWage(10)">Aumentar salário</button>
-        <button @click="changeWage(-12)">Diminuir salário</button>
-        <button @dblclick="changeWage(200)">Aumentar muito o salário</button>
-        <button @dblclick="changeWage(-200)">Diminuir muito o salário</button>
-
+        <button @click="logEvent">Log</button>
+        <div @mousemove="logCoords" class="canvas"> {{ coords.x }} , {{ coords.y }} </div>
     </div> 
+
+
 
     <script src="app.js"></script>
 </body>
